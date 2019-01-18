@@ -15,3 +15,7 @@ function addTask(e){
     ul.appendChild(newTask);
     textInput.value = '';
 }
+
+$('body').on('click', '.list-task li', function(){
+    this.remove();
+})
